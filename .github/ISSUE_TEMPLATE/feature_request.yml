@@ -1,0 +1,13 @@
+name: Feature request
+description: Suggest an improvement or support for a new documented Craft capability.
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Problem and proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Upstream documentation
+      description: Link to the relevant official Storytold Craft documentation when applicable.

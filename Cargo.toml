@@ -1,0 +1,22 @@
+[package]
+name = "getcraft-apps-mcp"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "A safe MCP gateway and plugin bundle for Storytold Craft app CLIs."
+license = "Apache-2.0"
+repository = "https://github.com/LuizGustavoWT/getcraft-apps-mcp"
+homepage = "https://github.com/LuizGustavoWT/getcraft-apps-mcp"
+keywords = ["mcp", "codex", "claude-code", "creative-tools"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "getcraft-mcp"
+path = "src/main.rs"
+
+[dependencies]
+rmcp = { version = "3.5.1", features = ["server", "transport-io"] }
+schemars = "1.2.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.50", features = ["io-util", "macros", "process", "rt-multi-thread", "time"] }

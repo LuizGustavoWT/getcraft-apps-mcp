@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "getcraft_apps": {
+      "command": "getcraft-mcp",
+      "args": ["serve"]
+    }
+  }
+}

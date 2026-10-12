@@ -1,0 +1,13 @@
+{
+  "name": "getcraft-apps-mcp",
+  "displayName": "GetCraft Apps MCP",
+  "version": "0.1.0",
+  "description": "A Rust MCP gateway and focused skills for the Storytold Craft application CLIs.",
+  "author": {
+    "name": "Luiz Gustavo",
+    "url": "https://github.com/LuizGustavoWT"
+  },
+  "homepage": "https://github.com/LuizGustavoWT/getcraft-apps-mcp",
+  "repository": "https://github.com/LuizGustavoWT/getcraft-apps-mcp",
+  "license": "Apache-2.0"
+}

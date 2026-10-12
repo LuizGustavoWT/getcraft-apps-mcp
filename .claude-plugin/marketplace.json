@@ -1,0 +1,15 @@
+{
+  "name": "getcraft-apps",
+  "description": "GetCraft Apps MCP and skills for the Storytold Craft creative applications.",
+  "owner": {
+    "name": "Luiz Gustavo",
+    "url": "https://github.com/LuizGustavoWT"
+  },
+  "plugins": [
+    {
+      "name": "getcraft-apps-mcp",
+      "source": "./plugins/getcraft-apps-mcp",
+      "description": "A Rust MCP gateway and focused skills for the Storytold Craft application CLIs."
+    }
+  ]
+}

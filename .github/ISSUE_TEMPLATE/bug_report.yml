@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a reproducible problem with the gateway, plugin, or a documented integration.
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Include the app, operating system, CLI version, and exact non-sensitive command or MCP request.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
