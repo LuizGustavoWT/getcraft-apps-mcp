@@ -61,8 +61,15 @@ getcraft-mcp apps
 Install the binary first. Then add the repository marketplace and plugin:
 
 ```sh
-codex plugin marketplace add LuizGustavoWT/getcraft-apps-mcp --sparse .agents/plugins
+codex plugin marketplace add LuizGustavoWT/getcraft-apps-mcp --sparse .agents/plugins --sparse plugins
 codex plugin add getcraft-apps-mcp@getcraft-apps
+```
+
+If the marketplace was previously added with only `--sparse .agents/plugins`, replace that incomplete checkout before installing:
+
+```sh
+codex plugin marketplace remove getcraft-apps
+codex plugin marketplace add LuizGustavoWT/getcraft-apps-mcp --sparse .agents/plugins --sparse plugins
 ```
 
 Start a new Codex chat after installation. The plugin starts `getcraft-mcp serve` and exposes the seven skills. To use the server without the plugin:
