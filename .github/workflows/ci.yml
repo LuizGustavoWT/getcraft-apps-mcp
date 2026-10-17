@@ -10,14 +10,19 @@ permissions:
 
 jobs:
   rust:
-    name: Rust checks
+    name: Rust and plugin checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - run: cargo fmt --check
-      - run: cargo clippy --all-targets -- -D warnings
-      - run: cargo test
-      - run: test -f plugins/getcraft-apps-mcp/plugin.json
-      - run: test -f plugins/getcraft-apps-mcp/.codex-plugin/plugin.json
-      - run: test -f plugins/getcraft-apps-mcp/.claude-plugin/plugin.json
+      - run: cargo clippy --locked --all-targets -- -D warnings
+      - run: cargo test --locked
+      - run: cargo build --locked
+      - run: python3 scripts/check_package.py
+      - run: python3 scripts/smoke_mcp.py target/debug/getcraft-mcp

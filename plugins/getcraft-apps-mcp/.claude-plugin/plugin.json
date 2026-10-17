@@ -1,7 +1,7 @@
 {
   "name": "getcraft-apps-mcp",
   "displayName": "GetCraft Apps MCP",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Rust MCP gateway and focused skills for the Storytold Craft application CLIs.",
   "author": {
     "name": "Luiz Gustavo",

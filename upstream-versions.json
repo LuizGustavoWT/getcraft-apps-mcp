@@ -1,0 +1,111 @@
+{
+  "checked_on": "2026-10-17",
+  "apps": {
+    "filmcraft": {
+      "repository": "https://github.com/storytold/filmcraft",
+      "latest_release": {
+        "tag": "v0.8.0",
+        "commit": "f03e21556d8e3a7155b91892d958debd5255d7af"
+      },
+      "audited_commit": "38ac719f619ddd2210b8d4fd61ae3f4caf9605e1",
+      "tested_cli_version": "0.8.0",
+      "docs": "https://github.com/storytold/filmcraft/blob/38ac719f619ddd2210b8d4fd61ae3f4caf9605e1/docs/agents.md",
+      "unreleased_features": [
+        "timeline.select accepts linked:false to select one member of a linked pair; absent from v0.8.0."
+      ]
+    },
+    "photocraft": {
+      "repository": "https://github.com/storytold/photocraft",
+      "latest_release": {
+        "tag": "v0.9.0",
+        "commit": "c699e3cda69f4852b43c0b191ab0091aaeff9d6a"
+      },
+      "audited_commit": "1d65bd605b25e325a12ab3e4d846d94ba41eedb7",
+      "tested_cli_version": "0.9.0",
+      "docs": "https://github.com/storytold/photocraft/blob/1d65bd605b25e325a12ab3e4d846d94ba41eedb7/docs/mcp.md",
+      "unreleased_features": [
+        "Command discovery includes search keywords beyond the v0.9.0 catalog.",
+        "Recorded layer.select actions can use layer name and occurrence for portable targeting.",
+        "Control authentication has an absolute 10-second deadline."
+      ]
+    },
+    "pdfcraft": {
+      "repository": "https://github.com/storytold/pdfcraft",
+      "latest_release": {
+        "tag": "v0.8.0",
+        "commit": "9931329b9fae0b05373b4dc3ac7c58541f0891a4"
+      },
+      "audited_commit": "be0254d7083fdd32389f79543d3511b67b37163b",
+      "tested_cli_version": "0.8.0",
+      "docs": "https://github.com/storytold/pdfcraft/blob/be0254d7083fdd32389f79543d3511b67b37163b/docs/mcp.md",
+      "unreleased_features": [
+        "MCP --automation-read-root and --automation-write-root; v0.8.0 supports --root but not these separate flags.",
+        "run --script --report produces one JSON report.",
+        "text_word_count, filtered/paginated accessibility_tags, and expanded accessibility tools.",
+        "CLI page lists support ranges such as extract --pages 1,3,5-8."
+      ]
+    },
+    "designcraft": {
+      "repository": "https://github.com/storytold/designcraft",
+      "latest_release": {
+        "tag": "v0.8.0",
+        "commit": "11a51d5b665aec8d6e675bd107a8a01514f10d00"
+      },
+      "audited_commit": "5aeb4dd743067e5a6d797d0f613448a06d141a09",
+      "tested_cli_version": "0.8.0",
+      "docs": "https://github.com/storytold/designcraft/blob/5aeb4dd743067e5a6d797d0f613448a06d141a09/docs/mcp.md",
+      "unreleased_features": [
+        "Headless MCP --automation-read-root and --automation-write-root; absent from v0.8.0 and incompatible with --connect.",
+        "Native ime tool and expanded new_document options including intent, units, startPage, slug and primaryTextFrame.",
+        "MCP command parameter validation rejects unknown keys and prevalidates batch steps.",
+        "Script result references preserve non-reference dollar strings and use $$ for a literal dollar."
+      ]
+    },
+    "effectcraft": {
+      "repository": "https://github.com/storytold/effectcraft",
+      "latest_release": {
+        "tag": "v0.10.0",
+        "commit": "05955c08b4fd025f1a09882df72e6dbff1a8148a"
+      },
+      "audited_commit": "8de1288a46aa75a27a9fa48dc48aeee0355da3d9",
+      "tested_cli_version": "0.10.0",
+      "docs": "https://github.com/storytold/effectcraft/blob/8de1288a46aa75a27a9fa48dc48aeee0355da3d9/docs/mcp.md",
+      "unreleased_features": [
+        "Bridge requests are not replayed automatically after a lost response; inspect uncertain edits before retrying.",
+        "CLI run/exec returns exit 1 for a failed renderQueue.render.",
+        "CLI render honors --empty. The audited main declares 0.11.0, but the latest published release is v0.10.0."
+      ]
+    },
+    "lightcraft": {
+      "repository": "https://github.com/storytold/lightcraft",
+      "latest_release": {
+        "tag": "v0.8.0",
+        "commit": "16dbb90499d3c63a6582fcbba1b2550a6e2da032"
+      },
+      "audited_commit": "f9b0c8c8a12c8fa17b7afb5baa00f9ee1bbd7b15",
+      "tested_cli_version": "0.8.0",
+      "docs": "https://github.com/storytold/lightcraft/blob/f9b0c8c8a12c8fa17b7afb5baa00f9ee1bbd7b15/docs/mcp.md",
+      "unreleased_features": [
+        "render --settings accepts one .lcpreset or XMP preset, not a preset collection.",
+        "merge hdr-batch / merge.hdrBatch returns per-stack merged and failed results.",
+        "Slideshow layout, templates, preview and PDF/JPEG/AV1 export with activity progress and cancellation.",
+        "library.recheckPreviewOnly rechecks RAW support while preserving adjustments and history.",
+        "photo.readFocusPoints and meta.focus expose camera focus metadata."
+      ]
+    },
+    "vectorcraft": {
+      "repository": "https://github.com/storytold/vectorcraft",
+      "latest_release": {
+        "tag": "v0.12.0",
+        "commit": "8bc65329286dc1b84aa392997bb205613c3e96cb"
+      },
+      "audited_commit": "e6aec0664cf8ebc86677cb17f46be42b511208a7",
+      "tested_cli_version": "0.11.0",
+      "docs": "https://github.com/storytold/vectorcraft/blob/e6aec0664cf8ebc86677cb17f46be42b511208a7/docs/mcp.md",
+      "unreleased_features": [
+        "doc_inspect / inspect_document support ids, kind, limit and offset beyond v0.12.0.",
+        "Native MCP supports cancellation, progress tokens and busy error -32003 beyond v0.12.0."
+      ]
+    }
+  }
+}

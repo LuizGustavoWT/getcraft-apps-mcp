@@ -1,6 +1,6 @@
 {
   "name": "getcraft-apps-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Rust MCP gateway and focused skills for the Storytold Craft application CLIs.",
   "author": {
     "name": "Luiz Gustavo",
@@ -10,7 +10,7 @@
   "interface": {
     "displayName": "GetCraft Apps MCP",
     "shortDescription": "Use the Craft creative-app CLIs safely from Codex.",
-    "longDescription": "Discovers seven Storytold Craft CLIs, runs finite commands without a shell, creates first-party MCP configurations, and includes per-app workflows.",
+    "longDescription": "Checks versions and searches live command metadata for seven Storytold Craft CLIs, runs finite commands without a shell, creates mode-checked native MCP configurations, and includes per-app workflows.",
     "developerName": "Luiz Gustavo",
     "category": "DeveloperTools",
     "capabilities": ["Read", "Write"],

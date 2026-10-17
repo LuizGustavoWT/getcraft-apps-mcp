@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "getcraft_apps": {
+      "type": "stdio",
       "command": "getcraft-mcp",
       "args": ["serve"]
     }
